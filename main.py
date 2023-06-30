@@ -24,7 +24,21 @@ st.markdown("""
 
 # Design hide "made with streamlit" footer menu area
 hide_streamlit_footer = """<style>#MainMenu {visibility: hidden;}
-                        footer {visibility: hidden;}</style>"""
+                        footer {visibility: hidden;}
+                        footer {
+	
+                        	visibility: hidden;
+                        	
+                        	}
+                        footer:after {
+                        	content:'goodbye'; 
+                        	visibility: visible;
+                        	display: block;
+                        	position: relative;
+                        	#background-color: red;
+                        	padding: 5px;
+                        	top: 2px;
+                        }</style>"""
 st.markdown(hide_streamlit_footer, unsafe_allow_html=True)
 
 # Connect to OpenAI GPT-3, fetch API key from Streamlit secrets
