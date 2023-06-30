@@ -30,15 +30,7 @@ hide_streamlit_footer = """<style>#MainMenu {visibility: hidden;}
                         	visibility: hidden;
                         	
                         	}
-                        footer:after {
-                        	content:'Be-alloy.com'; 
-                        	visibility: visible;
-                        	display: block;
-                        	position: relative;
-                        	#background-color: red;
-                        	padding: 5px;
-                        	top: 2px;
-                        }</style>"""
+                        </style>"""
 st.markdown(hide_streamlit_footer, unsafe_allow_html=True)
 
 # Connect to OpenAI GPT-3, fetch API key from Streamlit secrets
