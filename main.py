@@ -1,4 +1,4 @@
-import openai
+Alloyimport openai
 import streamlit as st
 
 
@@ -31,7 +31,7 @@ hide_streamlit_footer = """<style>#MainMenu {visibility: hidden;}
                         	
                         	}
                         footer:after {
-                        	content:'goodbye'; 
+                        	content:'Be-alloy.com'; 
                         	visibility: visible;
                         	display: block;
                         	position: relative;
