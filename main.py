@@ -88,7 +88,7 @@ def gen_mail_contents(email_contents):
                     {input_text}.:''',
                     # prompt=f"Rewrite the text to sound professional, elaborate and polite.\nText: {input_text}\nRewritten text:",
                     temperature=0.8,
-                    max_tokens=len(input_text)*3,
+                    max_tokens=len(input_text)*10,
                     top_p=0.8,
                     best_of=2,
                     frequency_penalty=0.0,
